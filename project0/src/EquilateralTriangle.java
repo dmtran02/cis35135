@@ -25,8 +25,10 @@ public class EquilateralTriangle extends Triangle{
     }
     
     public double getArea(){
-        double s = (this.length+this.length+this.length)/2;
-        return Math.sqrt(s*(s-this.length)*(s-this.length)*(s-this.length));
+        double result;
+        double s = (this.length+this.length+this.length)/2.0d;
+        result = Math.sqrt(s*(s-this.length)*(s-this.length)*(s-this.length));
+        return result;
     }
     
 }

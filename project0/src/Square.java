@@ -11,21 +11,23 @@
 public class Square extends Shape{
     
     int length;
+    int height;
     
     public Square(String name) {
         super(name);
     }
     
-    public void setDimensions(int x){
+    public void setDimensions(int x, int y){
         this.length = x;
+        this.height = y;
     }
     
     public void printDimensions(){
-        System.out.println(this.length);
+        System.out.println("Length: "+this.length + " and Width: "+this.height);
     }
     
     public double getArea(){
-        return this.length * this.length;
+        return this.length * this.height;
     }
     
 }
