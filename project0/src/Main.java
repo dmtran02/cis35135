@@ -17,10 +17,11 @@ public class Main {
         Scanner kb = new Scanner(System.in);
         
         // ---Square---
-        System.out.println("Enter length of sides for the square: ");
+        System.out.println("Enter the two dimensions for the square: ");
         int sq1 = kb.nextInt();
+        int sq2 = kb.nextInt();
         Square square = new Square("Square");
-        square.setDimensions(sq1);
+        square.setDimensions(sq1, sq2);
         System.out.println(square.getName());
         System.out.print("Current dimension: ");
         square.printDimensions();

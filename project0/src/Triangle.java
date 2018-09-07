@@ -27,8 +27,10 @@ public class Triangle extends Shape{
     }
     
     public double getArea(){
-        double s = (this.length1+this.length2+this.length3)/2;
-        return Math.sqrt(s*(s-this.length1)*(s-this.length2)*(s-this.length3));
+        double result;
+        double s = (this.length1+this.length2+this.length3)/2.0d;
+        result = Math.sqrt(s*(s-this.length1)*(s-this.length2)*(s-this.length3));
+        return result;
     }
     
 }
